@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // styling module for the app
 
+// component modules
+import WhoAmI from './Components/PageComponents/WhoAmI';
+import SkillsxProjects from './Components/PageComponents/SkillsxProjects';
+import ExperiencexQualifications from './Components/PageComponents/ExperiencexQualifications';
+import Contacts from './Components/PageComponents/Contacts';
+
+// main page for app
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="AppContent">
+        <div className="header">
+          <h1>AbdulMalik A Adegoke</h1>
+        </div>
+        
+        <WhoAmI />
+        <SkillsxProjects />
+        <ExperiencexQualifications />
+        <Contacts />
+      </div>
     </div>
   );
 }
