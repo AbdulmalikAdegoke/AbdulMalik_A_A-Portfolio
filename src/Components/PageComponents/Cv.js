@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Cv() {
+export default function Cv({ togglePageView }) {
   return (
     <div>
         
