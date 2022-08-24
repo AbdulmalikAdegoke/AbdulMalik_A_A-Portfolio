@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+/* Fonts */
+.sub_headings{
+
+}
+
+/* buttons */
+.page_buttons.white_black{
+
+}
+.page_buttons.black_white{
+
+}
+/*  */
+.intro_header{
+
+}
 
 /***** Who Am I section *****/
 
@@ -17,9 +33,7 @@
 
 }
 
-.page_buttons{
 
-}
  
 .portrait_image{
 
@@ -40,7 +54,12 @@
 }
 
 /***** Skills x Projects section *****/
+.skills_project_container{
 
+}
+.skills_project_content{
+
+}
 /* Desktop and laptop */
 @media only screen and (min-width: 1200px) {
   
@@ -52,7 +71,18 @@
 }
 
 /***** Experience x Qualifications section *****/
+.experience_container{
 
+}
+.experience_qual_content{
+
+}
+.experience_qual_box{
+
+}
+.portrait_image{
+
+}
 /* Desktop and laptop */
 @media only screen and (min-width: 1200px) {
   
@@ -64,7 +94,18 @@
 }
 
 /***** Contacts section *****/
+.navbar_list{
 
+}
+.nav_links{
+
+}
+.contact_icon{
+
+}
+.portfolio_feedback{
+  
+}
 /* Desktop and laptop */
 @media only screen and (min-width: 1200px) {
   
