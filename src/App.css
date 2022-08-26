@@ -154,12 +154,27 @@ a{
   
 }
 .profile_summary{
-  width: 100%;
+  width: 60%;
   /* border-width: ; */
-  border: black;
+  border: 2px solid black;
+  padding: 5% 8%;
+  box-shadow: 10px 15px;
+  height: 40vh;
+
+  transition: box-shadow 1s ease, background-color 2s ease, color 2s ease;
+}
+.profile_summary p{
+  font-size: large;
+}
+.profile_summary:hover{
+  background-color: black;
+  color: white;
+
+  box-shadow: 10px 10px rgb(130, 130, 130);;
+
 }
 .profile_content{
-  width: 50%;
+  width: 40%;
   float: left;
   text-align: justify
 }
@@ -176,7 +191,7 @@ a{
 
 .portrait_img{
   /* height: 200px; */
-  max-height: 70vh;
+  max-height: 75vh;
   box-shadow: 25px 25px;
 }
 
@@ -193,6 +208,14 @@ a{
     width: 50%;
     float: left;
     text-align: justify
+  }
+
+  .profile_summary{
+    width: 100%;
+    /* border-width: ; */
+    border: 2px solid black;
+    padding: 5% 10%;
+    
   }
    
   .portrait_image{
@@ -220,11 +243,13 @@ a{
   border-radius: 5%;
   color: black;
   font-weight: bold;
+
+  transition: border-radius 2s ease;
   
 }
 .page_cards:hover{
   cursor: pointer;
-  
+  border-radius: 0;
 
 }
 .page_cards.skills{

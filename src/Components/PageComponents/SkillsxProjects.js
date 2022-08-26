@@ -21,10 +21,20 @@ export default function SkillsxProjects({ togglePageView, portfolioProjects, tog
         {skillsProjectView==="home_view"?
           <>
             <div className='page_cards skills' onClick={()=>{toggleSectionView("skills_view")}}>
-              Technical Skills
+              Technical Skills <br />
+              <img 
+                className='skills_projects_icons' 
+                src={require('../../Assets/Icons/icons8-skills-64-.png')} 
+                alt='Skills Icon' 
+              />
             </div>
             <div className='page_cards notable_projects' onClick={()=>{toggleSectionView("projects_view")}}>
-              Notable Projects
+              Notable Projects <br />
+              <img 
+                className='skills_projects_icons' 
+                src={require('../../Assets/Icons/icons8-project-64-.png')} 
+                alt='Projects Icon' 
+              />
             </div>
           </>
         :

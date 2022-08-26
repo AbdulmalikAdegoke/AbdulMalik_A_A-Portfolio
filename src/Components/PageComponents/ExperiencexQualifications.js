@@ -41,10 +41,10 @@ export default function ExperiencexQualifications({ togglePageView }) {
               (Mar 2022-Apr 2022)
             </h4>
             <p>
-              DUCS Quackathon- Using C#
+              <b>DUCS Quackathon</b>- Using C# I and a group of fellow computing students made an educational game on ducks.
             </p>
             <p>
-              BCS Hackathon- Using product management skills I proposed a minimum viable project to deal with the problem of financial illiteracy in the education sector
+              <b>BCS Hackathon</b>- Using product management skills I proposed a minimum viable project to deal with the problem of financial illiteracy in the education sector
             </p>
           </div>
 
@@ -59,7 +59,11 @@ export default function ExperiencexQualifications({ togglePageView }) {
         </div>
 
         <div className="portrait_image">
-          <img src="" alt="A portrait of AbdulMalik Adegoke" />
+          <img 
+            className='portrait_img' 
+            src={require('../../Assets/Abdulmalik\'s Grad.jpg')} 
+            alt="A portrait of AbdulMalik Adegoke" 
+          />
         </div>
       </div>
 

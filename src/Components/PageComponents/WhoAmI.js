@@ -9,11 +9,12 @@ export default function WhoAmI({ togglePageView }) {
 
       <div className='profile'>
         <div className='profile_content'>
-          <div>
-            <p>I am AbdulMalik Adegoke, Nigerian, born and raised in Nigeria. I am a recent Computer Science graduate from the University of Dundee and I'm looking to put my current and yet-to-be-honed skills into practice in the computing industry.</p>
+          <div className='profile_summary'>
+            <p>I am <b></b>AbdulMalik Adegoke, Nigerian, born and raised in Nigeria. I am a recent Computer Science graduate from the University of Dundee and I'm looking to put my current and yet-to-be-honed skills into practice in the computing industry.</p>
             <p>I am versatile in terms of skills as I am a Software Developer, a UI/UX Designer, a Creative, a Photographer, an Artist...</p>
             <p>I would like to apply my skills in the solution of real world problems and also explore the versatility of my skills in different parts of the tech industry.</p>
-            <p>Welcome to my portfolio</p>
+            <br />
+            <h2>Welcome to my portfolio</h2>
           </div>
 
           <button
