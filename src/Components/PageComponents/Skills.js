@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Skills() {
+export default function Skills({ toggleSectionView }) {
   return (
     <div className='skills'>
       <h3 className='sub_heading'>
@@ -19,47 +19,44 @@ export default function Skills() {
           <h5>
             Front End
           </h5>
-          <ul>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Reactstrap</li>
-          </ul>
+          <p>
+            React,
+            JavaScript,
+            HTML,
+            CSS,
+            Bootstrap,
+            Reactstrap
+          </p>
           <h5>
             Back End
           </h5>
-          <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>C/ C++/ C#</li>
-          </ul>
+          <p>
+            Python,
+            JavaScript,
+            Java,
+            C/ C++/ C#
+          </p>
           <h5>
             Server Side Scripting
           </h5>
-          <ul>
-            <li>Django (Python Web Framework)</li>
-            <li>PHP</li>
-          </ul>
+          <p>
+            Django (Python Web Framework),
+            PHP
+          </p>
           <h5>
             Database
           </h5>
-          <ul>
-            <li>SQL</li>
-            <li>MongoDB</li>
-            {/* <li></li>
-            <li></li>
-            <li></li> */}
-          </ul>
+          <p>
+            SQL,
+            MongoDB
+          </p>
           <h5>
             Additional
           </h5>
-          <ul>
-            <li>Linux/ Unix</li>
-            <li>Git using GitHub</li>
-          </ul>
+          <p>
+            Linux/ Unix,
+            Git using GitHub
+          </p>
           {/* <h3>For Further Insight on my mastery level of each of the above languages</h3> */}
         </div>
       </div>
@@ -97,10 +94,16 @@ export default function Skills() {
       </div>
 
       <div>
-        <button>
+        <button
+          className='page_buttons black_white'
+          onClick={()=>{toggleSectionView("home_view")}}
+        >
           Skills x Projects
         </button>
-        <button>
+        <button
+          className='page_buttons black_white'
+          onClick={()=>{toggleSectionView("projects_view")}}
+        >
           Notable Projects
         </button>
       </div>

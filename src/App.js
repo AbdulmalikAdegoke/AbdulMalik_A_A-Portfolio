@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-
+      {/* Abdulmalik's Grad */}
       <div className="AppContent">
         <div className="intro_header">
           <div className='bg_img_preview'>

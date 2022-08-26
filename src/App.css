@@ -54,24 +54,29 @@ h4 .sub_headings.white_black{
   font-weight: bolder;
   box-shadow: 10px 10px;
   margin-top: 20px;
-  transition: box-shadow 3s ease, background-color 1s linear, color 1s linear;
+  transition: box-shadow 2s ease, background-color 1s linear, color 1s linear;
 }
 .page_buttons:hover{
   cursor: pointer;
 }
 .page_buttons.white_black{
-
+  
 }
 .page_buttons.white_black:hover{
   background-color: black;
   color: white;
-  box-shadow: -5px 10px rgb(130, 130, 130);
+  box-shadow: 5px 10px rgb(130, 130, 130);
 }
 .page_buttons.black_white{
-
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px rgb(130, 130, 130);
 }
 .page_buttons.black_white:hover{
-
+  background-color: black;
+  color: white;
+  box-shadow: -5px 10px white;
+  border: 2px solid white;
 }
 /* Shared and general styling */
 ul{
@@ -150,6 +155,7 @@ a{
 }
 .profile_summary{
   width: 100%;
+  /* border-width: ; */
   border: black;
 }
 .profile_content{
@@ -205,10 +211,16 @@ a{
 
 }
 .page_cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-top: 2%;
   height: 45vh;
   border-radius: 5%;
   color: black;
+  font-weight: bold;
+  
 }
 .page_cards:hover{
   cursor: pointer;
