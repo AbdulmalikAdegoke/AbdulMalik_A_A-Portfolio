@@ -17,14 +17,18 @@ export default function WhoAmI({ togglePageView }) {
           </div>
 
           <button
-          className='page_buttons white_black about_me'
-          onClick={()=>{togglePageView("about_me")}}
+            className='page_buttons white_black about_me'
+            onClick={()=>{togglePageView("about_me")}}
           >
             About Me
           </button>
         </div>
         <div className='portrait_image'>
-          <img className='portrait_img' src={require('../../Assets/Abdulmalik\'s portrait.jpg')} alt='A portrait of Abdulmalik Adegpke' />
+          <img 
+            className='portrait_img' 
+            src={require('../../Assets/Abdulmalik\'s portrait.jpg')} 
+            alt='A portrait of Abdulmalik Adegpke' 
+          />
         </div>
       </div>
 

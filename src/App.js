@@ -18,7 +18,12 @@ import ErrorPage from './Components/ErrorPage';
 
 // main page view for app
 function App() {
-
+  const [iconDisplayState,setIconDisplayState] = useState({
+    whoami:false,
+    skillsxprojects:false,
+    experiencexqualifications:false,
+    contacts:false
+  }) // views: whoami, skillsxprojects, experiencexqualifications, contacts
   const [currentPageView,setCurrentPageView] = useState("home") // views: home, project, about_me, cv view
 
   const [portfolioProjects,setPortfolioProjects] = useState([])
@@ -40,7 +45,7 @@ function App() {
         <div className="intro_header">
           <h1>
             <span>AbdulMalik A. Adegoke</span> <br />
-            [The Portfolio] <br />
+            [The Portfolio] <br /> <br />
             <Breadcrumbs aria-label="breadcrumb">
               <Link 
                 underline="hover" 
@@ -49,6 +54,11 @@ function App() {
                 // onMouseEnter={}
                 // onMouseLeave={}
               >
+                <img 
+                  className='intro_icons' 
+                  src={require('./Assets/Icons/icons8-who-96.png')} 
+                  alt='Who Am I Icon' 
+                /> <br />
                 Who Am I?
               </Link>
               <Link
@@ -56,6 +66,11 @@ function App() {
                 color="#d6d4d4" 
                 href="/#skillsXProjects"
               >
+                <img 
+                  className='intro_icons' 
+                  src={require('./Assets/Icons/icons8-skills-64.png')} 
+                  alt='Skills x Projects Icon' 
+                /> <br />
                 Skills x Projects
               </Link>
               <Link 
@@ -63,6 +78,11 @@ function App() {
                 color="#d6d4d4" 
                 href="/#experienceXQualifications"
               >
+                <img 
+                  className='intro_icons' 
+                  src={require('./Assets/Icons/icons8-internship-50.png')} 
+                  alt='Experience x Qualifications Icon' 
+                /> <br />
                 Experience x Qualifications
               </Link>
               <Link
@@ -70,6 +90,11 @@ function App() {
                 color="#d6d4d4" 
                 href="/#contacts"
               >
+                <img 
+                  className='intro_icons' 
+                  src={require('./Assets/Icons/icons8-address-book-64.png')} 
+                  alt='Contacts Icon' 
+                /> <br />
                 Contacts
               </Link>
             </Breadcrumbs>
