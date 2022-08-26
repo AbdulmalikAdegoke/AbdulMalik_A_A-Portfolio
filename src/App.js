@@ -43,62 +43,65 @@ function App() {
 
       <div className="AppContent">
         <div className="intro_header">
-          <h1>
-            <span>AbdulMalik A. Adegoke</span> <br />
-            [The Portfolio] <br /> <br />
-            <Breadcrumbs aria-label="breadcrumb">
-              <Link 
-                underline="hover" 
-                color="#d6d4d4" 
-                href="/#whoAmI"
-                // onMouseEnter={}
-                // onMouseLeave={}
-              >
-                <img 
-                  className='intro_icons' 
-                  src={require('./Assets/Icons/icons8-who-96.png')} 
-                  alt='Who Am I Icon' 
-                /> <br />
-                Who Am I?
-              </Link>
-              <Link
-                underline="hover"
-                color="#d6d4d4" 
-                href="/#skillsXProjects"
-              >
-                <img 
-                  className='intro_icons' 
-                  src={require('./Assets/Icons/icons8-skills-64.png')} 
-                  alt='Skills x Projects Icon' 
-                /> <br />
-                Skills x Projects
-              </Link>
-              <Link 
-                underline="hover" 
-                color="#d6d4d4" 
-                href="/#experienceXQualifications"
-              >
-                <img 
-                  className='intro_icons' 
-                  src={require('./Assets/Icons/icons8-internship-50.png')} 
-                  alt='Experience x Qualifications Icon' 
-                /> <br />
-                Experience x Qualifications
-              </Link>
-              <Link
-                underline="hover"
-                color="#d6d4d4" 
-                href="/#contacts"
-              >
-                <img 
-                  className='intro_icons' 
-                  src={require('./Assets/Icons/icons8-address-book-64.png')} 
-                  alt='Contacts Icon' 
-                /> <br />
-                Contacts
-              </Link>
-            </Breadcrumbs>
-          </h1>
+          <div className='bg_img_preview'>
+            <h1>
+              <span>AbdulMalik A. Adegoke</span> <br />
+              [The Portfolio] <br /> <br />
+              <Breadcrumbs aria-label="breadcrumb">
+                <Link 
+                  underline="hover" 
+                  color="#d6d4d4" 
+                  href="/#whoAmI"
+                  // onMouseEnter={}
+                  // onMouseLeave={}
+                >
+                  <img 
+                    className='intro_icons' 
+                    src={require('./Assets/Icons/icons8-who-96.png')} 
+                    alt='Who Am I Icon' 
+                  /> <br />
+                  Who Am I?
+                </Link>
+                <Link
+                  underline="hover"
+                  color="#d6d4d4" 
+                  href="/#skillsXProjects"
+                >
+                  <img 
+                    className='intro_icons' 
+                    src={require('./Assets/Icons/icons8-skills-64.png')} 
+                    alt='Skills x Projects Icon' 
+                  /> <br />
+                  Skills x Projects
+                </Link>
+                <Link 
+                  underline="hover" 
+                  color="#d6d4d4" 
+                  href="/#experienceXQualifications"
+                >
+                  <img 
+                    className='intro_icons' 
+                    src={require('./Assets/Icons/icons8-internship-50.png')} 
+                    alt='Experience x Qualifications Icon' 
+                  /> <br />
+                  Experience x Qualifications
+                </Link>
+                <Link
+                  underline="hover"
+                  color="#d6d4d4" 
+                  href="/#contacts"
+                >
+                  <img 
+                    className='intro_icons' 
+                    src={require('./Assets/Icons/icons8-address-book-64.png')} 
+                    alt='Contacts Icon' 
+                  /> <br />
+                  Contacts
+                </Link>
+              </Breadcrumbs>
+            </h1>
+          </div>
+          
           
           
         </div>

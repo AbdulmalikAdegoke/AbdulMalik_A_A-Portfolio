@@ -10,12 +10,21 @@
   overflow-y: scroll;
   height: 100vh;
   width: 100vw;
-  scroll-padding: 5%;
+  scroll-padding: 10%;
   /* scroll-snap-type: ; */
   position: relative;
 }
 
 /* Fonts */
+h1 span{
+  font-size: larger;
+}
+h1{
+
+}
+h2{
+  /* font-size: larger; */
+}
 h2 .sub_headings.black_white{
 
 }
@@ -39,20 +48,48 @@ h4 .sub_headings.white_black{
 
 /* buttons */
 .page_buttons{
-  padding: 10px 50px;
+  padding: 2.5% 50px;
   font-size: large;
   background-color: rgba(0, 0, 0, 0.0);
-  font-weight: bold;
+  font-weight: bolder;
   box-shadow: 10px 10px;
+  margin-top: 20px;
+  transition: box-shadow 3s ease, background-color 1s linear, color 1s linear;
+}
+.page_buttons:hover{
+  cursor: pointer;
 }
 .page_buttons.white_black{
 
 }
+.page_buttons.white_black:hover{
+  background-color: black;
+  color: white;
+  box-shadow: -5px 10px rgb(130, 130, 130);
+}
 .page_buttons.black_white{
 
 }
+.page_buttons.black_white:hover{
 
+}
 /* Shared and general styling */
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.nav_links{
+
+}
+/* Laptop and tablet */
+@media only screen and (min-width: 970px) {
+  .containers{
+    padding: 0 15%;
+  }
+}
 .intro_header, .containers{
   min-height: 100vh;
   
@@ -70,8 +107,17 @@ h4 .sub_headings.white_black{
   background-color: black;
   color: white;
 
-  background-image: url("./Assets/Abdulmalik\'s\ portrait V4.jpg");
-  background-size: cover;
+  
+  /* background-image: url("./Assets/Abdulmalik\'s\ portrait V4.jpg"), url("./Assets/Abdulmalik\'s\ portrait V4.2.jpg"), url("./Assets/Abdulmalik\'s\ portrait V4.5.jpg");
+  background-size: 30%, 30%, 30%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left, center, right;
+} */
+
+  background-image: url("./Assets/Abdulmalik\'s\ portrait V4.2.jpg"), url("./Assets/Abdulmalik\'s\ portrait V4.jpg"), url("./Assets/Abdulmalik\'s\ portrait V4.5.jpg");
+  background-size: contain;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
 
 }
 .intro_icons{
@@ -102,7 +148,10 @@ h4 .sub_headings.white_black{
 .profile{
   
 }
-
+.profile_summary{
+  width: 100%;
+  border: black;
+}
 .profile_content{
   width: 50%;
   float: left;
@@ -121,7 +170,8 @@ h4 .sub_headings.white_black{
 
 .portrait_img{
   /* height: 200px; */
-  max-height: calc(70vh);
+  max-height: 70vh;
+  box-shadow: 25px 25px;
 }
 
 
@@ -154,16 +204,29 @@ h4 .sub_headings.white_black{
 .skills_project_content{
 
 }
+.page_cards{
+  margin-top: 2%;
+  height: 45vh;
+  border-radius: 5%;
+  color: black;
+}
 .page_cards:hover{
   cursor: pointer;
+  
 
+}
+.page_cards.skills{
+  background-color: white;
 }
 
 .page_cards.skills{
-
+  height: 45vh;
+  width: 90%;
 }
 .page_cards.notable_projects{
-
+  height: 45vh;
+  width: 90%;
+  background-color: white;
 }
 /* Desktop and laptop */
 @media only screen and (min-width: 1200px) {
@@ -172,7 +235,16 @@ h4 .sub_headings.white_black{
 
 /* Laptop and tablet */
 @media only screen and (min-width: 970px) {
-  
+  .page_cards.skills{
+    float: left;
+    width: 45%;
+    height: 75vh;
+  }
+  .page_cards.notable_projects{
+    float: right;
+    width: 45%;
+    height: 75vh;
+  }
 }
 
 /***** Experience x Qualifications section *****/
@@ -202,12 +274,15 @@ h4 .sub_headings.white_black{
 .containers.contacts{
   background-color: black;
   color: white;
-  /* height: 50vh; */
+  height: 40vh;
 }
 .navbar_list{
-
+  display: flex;
 }
 .nav_links{
+
+}
+.contacts_nav{
 
 }
 .contact_icon{
@@ -215,6 +290,9 @@ h4 .sub_headings.white_black{
 }
 .portfolio_feedback{
   
+}
+.ig_icons{
+  height: 30px;
 }
 /* Desktop and laptop */
 @media only screen and (min-width: 1200px) {

@@ -12,37 +12,53 @@ export default function Contacts() {
       <div>
         {/* navbar list of contact mediums */}
           <ul className="navbar_list">
-            <a href="mailto:abdulmalikadegoke@gmail.com">
-              <li className="nav_links">
+            
+            <li className="contacts_nav">
+              <a className="nav_links" href="mailto:abdulmalikadegoke@gmail.com">
                 {/* Icon */}
-                <img className='contact_icon' src={require('../../Assets/Icons/icons8-mail-240.png')} alt='Icon' />
+                <img className='contact_icon' src={require('../../Assets/Icons/icons8-mail-240.png')} alt='Icon' /> <br />
                 abdulmalikadegoke@gmail.com
-              </li>
-            </a>
-            <li className="nav_links">
-            <a href="tel:+44786699273">
-              {/* Icon */}
-              <img className='contact_icon' src={require('../../Assets/Icons/icons8-phone-240.png')} alt='Icon' />
-              +44(0)7786699273
-            </a>
+              </a>
             </li>
-            <a href="https://www.linkedin.com/in/abdulmalik-adegoke-a77766158/">
-              <li className="nav_links">
+            
+            <li className="contacts_nav">
+              <a className="nav_links" href="tel:+44786699273">
                 {/* Icon */}
-                <img className='contact_icon' src={require('../../Assets/Icons/icons8-linkedin-240.png')} alt='Icon' />
+                <img className='contact_icon' src={require('../../Assets/Icons/icons8-phone-240.png')} alt='Icon' /> <br />
+                +44(0)7786699273
+              </a>
+            </li>
+
+            <li className="contacts_nav">
+              <a className="nav_links" href="https://www.linkedin.com/in/abdulmalik-adegoke-a77766158/">
+                {/* Icon */}
+                <img className='contact_icon' src={require('../../Assets/Icons/icons8-linkedin-240.png')} alt='Icon' /> <br />
                 Abdulmalik Adegoke 
-              </li>
-            </a>
-            <li className="nav_links">
+              </a>
+            </li>
+            
+            <li className="contacts_nav">
               {/* Icon */}
-              <img className='contact_icon' src={require('../../Assets/Icons/icons8-instagram-240.png')} alt='Icon' />
-              <a href="https://www.instagram.com/abdmalik_a/">@abdmalik_a</a> <br/>
-              <a href="https://www.instagram.com/i_mspired/">@i_mspired</a> <br/>
-              <a href="https://www.instagram.com/triple_a_moments/">@triple_a_moments</a> <br/>
+              <img className='contact_icon' src={require('../../Assets/Icons/icons8-instagram-240.png')} alt='Icon' /> <br />
+              <a className="nav_links" href="https://www.instagram.com/abdmalik_a/">
+                <img className='ig_icons' src={require('../../Assets/Icons/icons8-person-96.png')} alt='Icon' />
+                <br/>
+                @abdmalik_a
+              </a> <br/>
+              <a className="nav_links" href="https://www.instagram.com/i_mspired/">
+                <img className='ig_icons' src={require('../../Assets/Icons/icons8-camera-100.png')} alt='Icon' /> 
+                <br/>
+                @i_mspired
+              </a> <br/>
+              <a className="nav_links" href="https://www.instagram.com/triple_a_moments/">
+                <img className='ig_icons' src={require('../../Assets/Icons/icons8-cameras-64.png')} alt='Icon' /> 
+                <br/>
+                @triple_a_moments
+              </a> <br/>
             </li>
           </ul>
 
-          <div className="portfolio_feedback">
+          {/* <div className="portfolio_feedback">
             <Form>
               <Input>
 
@@ -53,7 +69,7 @@ export default function Contacts() {
               </Button>
 
             </Form>
-          </div>
+          </div> */}
 
       </div>
 
