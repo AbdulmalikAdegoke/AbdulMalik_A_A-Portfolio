@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Projects({ togglePageView }) {
+export default function Projects({ togglePageView, projectToPreview }) {
   return (
-    <div className=''>
+    <div className='project_preview'>
         <h2>
             Project
         </h2>

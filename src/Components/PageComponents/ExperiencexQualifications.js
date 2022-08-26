@@ -2,18 +2,18 @@ import React from 'react'
 
 export default function ExperiencexQualifications({ togglePageView }) {
   return (
-    <div className='experience_container'>
-      <h2>
+    <div id='experienceXQualifications' className='containers experience_qualifications'>
+      <h2 className='sub_heading'>
         Experience x Qualifications
       </h2>
 
-      <div class="experience_qual_content">
-        <div class="experience_qual_box">
+      <div className="experience_qualifications_content">
+        <div className="experience_qualifications_box">
             
         </div>
-        
-        <div class="portrait_image">
-          <img src="" alt="A portrait of Abdulmalik Adegpke" />
+
+        <div className="portrait_image">
+          <img src="" alt="A portrait of AbdulMalik Adegoke" />
         </div>
       </div>
 

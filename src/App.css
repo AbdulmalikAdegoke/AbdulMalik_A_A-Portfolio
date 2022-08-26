@@ -1,47 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  /* font-family: ; */
+}
 .App {
   text-align: center;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  scroll-padding: 2%;
+  /* scroll-snap-type: ; */
+  position: relative;
 }
 
 /* Fonts */
-.sub_headings{
+h2 .sub_headings.black_white{
+
+}
+h2 .sub_headings.white_black{
+
+}
+
+h3 .sub_headings.black_white{
+
+}
+h3 .sub_headings.white_black{
+
+}
+
+h4 .sub_headings.black_white{
+
+}
+h4 .sub_headings.white_black{
 
 }
 
 /* buttons */
+.page_buttons{
+  padding: 10px 50px;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.0);
+  font-weight: bold;
+  box-shadow: 10px 10px;
+}
 .page_buttons.white_black{
 
 }
 .page_buttons.black_white{
 
 }
+
+/* Shared and general styling */
+.intro_header, .containers{
+  min-height: 100vh;
+  
+  scroll-snap-align: start;
+}
 /*  */
 .intro_header{
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* scroll-snap-type: y mandatory; */
+
+  background-color: black;
+  color: white;
+
+}
+.home_page_view{
+  /* display: flex; */
+  scroll-snap-type: x proximity;
+}
+
+.navbar{
+
+}
+.navbar_title{
 
 }
 
-/***** Who Am I section *****/
 
-.who_am_i_container{
+/***** Who Am I section *****/
+.containers.who_am_i{
+  padding-left: 5%;
+  padding-right: 5%;
 
 }
 
 .profile{
-
+  
 }
 
 .profile_content{
-
+  width: 50%;
+  float: left;
+  text-align: justify
 }
 
+.page_buttons.white_black.about_me{
 
+}
  
 .portrait_image{
-
+  width: 50%;
+  float: right;
+  height: fit-content;
 }
 
 .portrait_img{
-
+  /* height: 200px; */
+  max-height: calc(70vh);
 }
+
+
 
 /* Desktop and laptop */
 @media only screen and (min-width: 1200px) {
@@ -50,14 +125,36 @@
 
 /* Laptop and tablet */
 @media only screen and (min-width: 970px) {
-  
+  .profile_content{
+    width: 50%;
+    float: left;
+    text-align: justify
+  }
+   
+  .portrait_image{
+    width: 50%;
+    float: right;
+    height: fit-content;
+  }
 }
 
 /***** Skills x Projects section *****/
-.skills_project_container{
-
+.containers.skills_project{
+  background-color: black;
+  color: white;
 }
 .skills_project_content{
+
+}
+.page_cards:hover{
+  cursor: pointer;
+
+}
+
+.page_cards.skills{
+
+}
+.page_cards.notable_projects{
 
 }
 /* Desktop and laptop */
@@ -71,13 +168,13 @@
 }
 
 /***** Experience x Qualifications section *****/
-.experience_container{
+.containers.experience_qualifications{
 
 }
-.experience_qual_content{
+.experience_qualifications_content{
 
 }
-.experience_qual_box{
+.experience_qualifications_box{
 
 }
 .portrait_image{
@@ -94,6 +191,11 @@
 }
 
 /***** Contacts section *****/
+.containers.contacts{
+  background-color: black;
+  color: white;
+  /* height: 50vh; */
+}
 .navbar_list{
 
 }

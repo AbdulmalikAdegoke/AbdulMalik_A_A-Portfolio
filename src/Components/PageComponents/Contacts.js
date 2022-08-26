@@ -4,7 +4,7 @@ import { Form, Input, Button } from 'reactstrap'
 
 export default function Contacts() {
   return (
-    <div>
+    <div id='contacts' className='containers contacts'>
       <h2>
         Contacts
       </h2>
@@ -20,9 +20,11 @@ export default function Contacts() {
               </li>
             </a>
             <li className="nav_links">
+            <a href="tel:+44786699273">
               {/* Icon */}
               <img className='contact_icon' src={require('../../Assets/Icons/icons8-phone-240.png')} alt='Icon' />
               +44(0)7786699273
+            </a>
             </li>
             <a href="https://www.linkedin.com/in/abdulmalik-adegoke-a77766158/">
               <li className="nav_links">

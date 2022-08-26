@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutMe({ togglePageView }) {
   return (
-    <div>
+    <div className='about_me_view'>
         <h2>
             About Me
         </h2>
