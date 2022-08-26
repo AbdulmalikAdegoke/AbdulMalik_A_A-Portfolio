@@ -267,7 +267,9 @@ a{
 
 }
 .experience_qualifications_box{
-
+  width: 50%;
+  float: left;
+  text-align: justify;
 }
 .portrait_image{
 

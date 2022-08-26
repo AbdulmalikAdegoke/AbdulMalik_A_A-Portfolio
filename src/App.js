@@ -110,14 +110,14 @@ function App() {
         {
           currentPageView === "home" ?
             <div className='home_page_view'>
-              <div className='navbar'>
+              {/* <div className='navbar'>
                 <div className='navbar_title'>
                   AbdulMalik A. Adegoke [The Portfolio]
                 </div>
                 <div>
                   
                 </div>
-              </div>
+              </div> */}
               <WhoAmI 
                 togglePageView={togglePageView} 
               />

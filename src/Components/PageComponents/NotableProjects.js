@@ -2,7 +2,7 @@ import React from 'react'
 
 import ProjectList from './ProjectList'
 
-export default function NotableProjects({ toggleView, togglePageView, portfolioProjects, toggleProjectPreview }) {
+export default function NotableProjects({ toggleSectionView, togglePageView, portfolioProjects, toggleProjectPreview }) {
 
   return (
     <div className='notable_projects_container'>
@@ -18,6 +18,21 @@ export default function NotableProjects({ toggleView, togglePageView, portfolioP
             }
           )
         }
+      </div>
+
+      <div>
+        <button
+          className='page_buttons black_white'
+          onClick={()=>{toggleSectionView("home_view")}}
+        >
+          Skills x Projects
+        </button>
+        <button
+          className='page_buttons black_white'
+          onClick={()=>{toggleSectionView("skills_view")}}
+        >
+          Skills
+        </button>
       </div>
     </div>
   )

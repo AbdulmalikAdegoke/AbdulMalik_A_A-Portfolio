@@ -11,11 +11,11 @@ export default function Skills({ toggleSectionView }) {
         {/* web_software_game_db_mobile */}
         {/* languages: c_c++_c#_python_html_css_js_php_react_java_node_sql_network */}
         <h4>
-          As a Developer
+          As a Developer:
         </h4>
         <div className="skills_content_body">
-          <p>I have experience in Software Development, Website Development(both front end and backend), Agile Software Development</p>
-          <p>That being said, the languages I have experience with are as follows:</p>
+          {/* <p>I have experience in Software Development, Website Development(both front end and backend), Agile Software Development</p> */}
+          {/* <p>That being said, the languages I have experience with are as follows:</p> */}
           <h5>
             Front End
           </h5>
@@ -57,28 +57,34 @@ export default function Skills({ toggleSectionView }) {
             Linux/ Unix,
             Git using GitHub
           </p>
+
+          <p>I have experience in Software Development, Website Development(both front end and backend), Agile Software Development</p>
           {/* <h3>For Further Insight on my mastery level of each of the above languages</h3> */}
         </div>
       </div>
 
+      <br />
+
       <div className="as_a_designer">
         <h4>
-          As a UI/UX designer
+          As a UI/UX designer:
         </h4>
         <div className="skills_content_body">
-          <p>I currently engage in photgraphy as a hobbyist photgrapher with a focus mainly on landscapes, natures and sometimes people.</p>
+          <p>I am currently a novice self taught UI/ UX designer.</p>
           <p>I have skills using the following tools:</p>
-          <ul>
-            <li>Figma</li>
-            <li>Adobe InDesign</li>
-            <li>Adobe Photoshop</li>
-          </ul>
+          <p>
+            Figma,
+            Adobe InDesign,
+            Adobe Photoshop
+          </p>
         </div>
       </div>
 
+      <br />
+
       <div className="as_a_photographer">
         <h4>
-          As a Photographer
+          As a Photographer:
         </h4>
         <div className="skills_content_body">
           <p>I currently engage in photgraphy as a hobbyist photgrapher with a focus mainly on landscapes, natures and sometimes people.</p>

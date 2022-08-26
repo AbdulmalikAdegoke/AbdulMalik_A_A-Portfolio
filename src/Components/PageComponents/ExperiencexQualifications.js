@@ -9,7 +9,53 @@ export default function ExperiencexQualifications({ togglePageView }) {
 
       <div className="experience_qualifications_content">
         <div className="experience_qualifications_box">
-            
+          <div className='qualifications'>
+            <h3>
+              Qualifications
+            </h3>
+            <h4>
+              Computer Science BSc Hons. <br />
+              University of Dundee <br />
+              (2018-2022)
+            </h4>
+            <p>
+              Studied and completed the course, computer science, with a Bachelors of Science Hounours Degree 2022.
+            </p>
+          </div>
+          <br />
+          <div className='experience'>
+            <h3>
+              Experience
+            </h3>
+            <h4>
+              Software Development Intern <br />
+              Algorism Ltd <br />
+              (Jun 2019 - Jul 2019)
+            </h4>
+            <p>
+              Paired with a software developer of the company
+            </p>
+            <h4>
+              Hackathon Participant and winner <br />
+              University of Dundee <br />
+              (Mar 2022-Apr 2022)
+            </h4>
+            <p>
+              DUCS Quackathon- Using C#
+            </p>
+            <p>
+              BCS Hackathon- Using product management skills I proposed a minimum viable project to deal with the problem of financial illiteracy in the education sector
+            </p>
+          </div>
+
+          <div>
+            <button
+              className="page_buttons white_black"
+              onClick={()=>{togglePageView("cv")}}
+            >
+              CV [Preview x Download]
+            </button>
+          </div>
         </div>
 
         <div className="portrait_image">
@@ -17,12 +63,7 @@ export default function ExperiencexQualifications({ togglePageView }) {
         </div>
       </div>
 
-      <div>
-        <button
-        className="page_buttons white_black" type="button" name="button">
-          CV [Preview x Download]
-        </button>
-      </div>
+      
     </div>
   )
 }
